@@ -41,7 +41,7 @@ else
 
 // Home Work
 
-let nums = 15;
+let nums = 30;
 if(nums % 3=== 0 && nums % 5 === 0)
 {
     console.log("FizzBuzz");
@@ -58,3 +58,8 @@ else
 {
       console.log("Not divisible by 3 or 5");
 }
+
+let a = "5";
+let b = 5;
+
+console.log(a === b);
