@@ -1,0 +1,117 @@
+1. Variables
+
+var  // old (avoid)
+let  // changeable
+const // cannot change
+
+Example
+
+let name = "John";
+name = "Mike"; // allowed
+
+const age = 25;
+age = 30; // ❌ Error
+
+Q1. What is difference between var, let and const?
+Ans 
+| var             | let              | const            |
+| --------------- | ---------------- | ---------------- |
+| Function scoped | Block scoped     | Block scoped     |
+| Can redeclare   | Cannot redeclare | Cannot redeclare |
+| Can reassign    | Can reassign     | Cannot reassign  |
+
+
+
+
+2. Data Types
+JavaScript has 8 data types.
+Primitive:
+
+> String
+
+> Number
+
+> Boolean
+
+> Undefined
+
+> Null
+
+> BigInt
+
+> Symbol
+
+Non-Primitive:
+
+> Object
+
+Example
+let username = "Dnyanesh"; // String
+let age = 25;              // Number
+let isActive = true;       // Boolean
+let salary = null;         // Null
+let x;                     // Undefined
+
+console.log(typeof username);
+
+Q2. What is difference between null and undefined?
+Answer:
+undefined → Variable declared but not assigned value.
+null → Intentional empty value assigned by developer.
+
+Example
+let a;
+console.log(a); // undefined
+
+let b = null;
+console.log(b); // null
+
+3. Operators
+Arithmetic
+
+let a = 10;
+let b = 5;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+
+Comparison
+console.log(5 == "5");   // true
+console.log(5 === "5");  // false
+
+Q3. Difference between == and === ?
+Answer:
+== → compares value only (type conversion allowed)
+=== → compares value AND type (strict comparison)
+
+4. Conditions
+let marks = 75;
+
+if (marks >= 50) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
+}
+
+Q4. What is truthy and falsy values in JS?
+Answer:
+Falsy values:
+false
+0
+""
+null
+undefined
+NaN
+
+Everything else is truthy.
+
+Program 1 – Even or Odd
+let num = 10;
+
+if (num % 2 === 0) {
+  console.log("Even");
+} else {
+  console.log("Odd");
+}
