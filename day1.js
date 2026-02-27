@@ -58,8 +58,10 @@ else
 {
       console.log("Not divisible by 3 or 5");
 }
-
+// true or false interview confusing question
 let a = "5";
 let b = 5;
 
 console.log(a === b);
+console.log(0 == false);
+console.log(0 === false);

@@ -115,3 +115,9 @@ if (num % 2 === 0) {
 } else {
   console.log("Odd");
 }
+
+Q5.  What is type coercion?
+Answer:
+Type coercion is automatic type conversion done by JavaScript when using ==.
+Example:
+"5" == 5  // true
